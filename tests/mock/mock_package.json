@@ -1,0 +1,39 @@
+{
+    "name": "ihna_calendarworker",
+    "version": "1.0.0",
+    "description": "Background task that synchronizes the agendas provided by the school and divides them into small group agendas.",
+    "main": "src/server.js",
+    "scripts": {
+      "lint:check": "eslint .",
+      "lint:fix": "eslint . --fix",
+      "test:dev": "jest --detectOpenHandles --watchAll",
+      "test:cov": "jest --coverage --force-exit --detectOpenHandles",
+      "test": "jest --force-exit --detectOpenHandles",
+      "serve": "nodemon src/server.js",
+      "start": "node src/server.js",
+      "preversion": "git fetch --tags && npm run lint:check && npm test",
+      "version": "npm run build",
+      "postversion": "git push --follow-tags"
+    },
+    "keywords": [
+      "IHNA",
+      "worker",
+      "calendar"
+    ],
+    "author": "Kritune",
+    "license": "ISC",
+    "dependencies": {
+      "@types/jest": "^26.0.20",
+      "eslint-plugin-jest": "^24.1.3",
+      "express": "^4.17.1",
+      "pm2": "^4.5.1"
+    },
+    "devDependencies": {
+      "eslint": "^7.17.0",
+      "jest": "^26.6.3",
+      "node-mocks-http": "^1.9.0",
+      "nodemon": "^2.0.7",
+      "supertest": "^6.0.1"
+    }
+  }
+  
