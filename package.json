@@ -15,7 +15,12 @@
     "version": "npm run build",
     "postversion": "git push --follow-tags"
   },
-  "author": "",
+  "keywords": [
+    "IHNA",
+    "worker",
+    "calendar"
+  ],
+  "author": "Kritune",
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^26.0.20",
