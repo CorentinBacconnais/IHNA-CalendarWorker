@@ -4,9 +4,16 @@
   "description": "Background task that synchronizes the agendas provided by the school and divides them into small group agendas.",
   "main": "src/server.js",
   "scripts": {
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test:dev": "jest --detectOpenHandles --watchAll",
     "test:cov": "jest --coverage --force-exit --detectOpenHandles",
-    "test": "jest --force-exit --detectOpenHandles"
+    "test": "jest --force-exit --detectOpenHandles",
+    "serve": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "preversion": "git fetch --tags && npm run lint:check && npm test",
+    "version": "npm run build",
+    "postversion": "git push --follow-tags"
   },
   "author": "",
   "license": "ISC",
