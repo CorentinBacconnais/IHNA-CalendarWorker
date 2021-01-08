@@ -1,7 +1,7 @@
 const Controller = require('../../src/controllers/calendar_worker.controller')
 const Utils = require("../../src/utils")
 const httpMocks = require('node-mocks-http')
-const packageJson = require('../mock/mock_package.json')
+const packageJson = require('../../package.json')
 
 Utils.packageParseInformation = jest.fn()
 
