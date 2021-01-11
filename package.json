@@ -1,6 +1,6 @@
 {
   "name": "ihna_calendarworker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Background task that synchronizes the agendas provided by the school and divides them into small group agendas.",
   "main": "src/server.js",
   "scripts": {
