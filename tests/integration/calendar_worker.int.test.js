@@ -2,7 +2,7 @@ const supertest = require('supertest')
 const app = require('../../src/app')
 const http = require('http')
 
-const endpointUrl = "/api/calendarworker"
+const endpointUrl = '/api/calendarworker'
 var server, request
 
 beforeAll((done) => {
@@ -17,7 +17,7 @@ afterAll((done) => {
 
 describe('Integreation test for Calendar Worker controllers : ' + endpointUrl, () => {
   describe('GET methode with ' + endpointUrl, () => {
-    it('Should GET' + endpointUrl + " return informations with name and version", async () => {
+    it('Should GET' + endpointUrl + ' return informations with name and version', async () => {
       const response = await request
         .get(endpointUrl)
       

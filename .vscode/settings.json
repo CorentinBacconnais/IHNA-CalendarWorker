@@ -1,4 +1,8 @@
 {
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true
+    }
 }
